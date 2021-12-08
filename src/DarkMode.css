@@ -1,0 +1,52 @@
+.dark-mode {
+  background-color: var(--dark);
+  transition: all ease-in-out 0.5s;
+}
+.dark-mode .outer-check p {
+  color: white;
+  transition: all ease-in-out 0.5s;
+}
+.dark-mode h1 {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.dark-mode h3 {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.dark-mode .inner-job {
+  transition: all ease-in-out 0.5s;
+  background-color: var(--light-dark);
+}
+.dark-mode .inner-job-header {
+  transition: all ease-in-out 0.5s;
+  background-color: var(--light-dark);
+}
+.dark-mode .open-job {
+  transition: all ease-in-out 0.5s;
+  background-color: var(--light-dark) !important;
+  box-shadow: unset;
+  background: unset;
+}
+.dark-mode .open-job:hover {
+  background: #121721;
+  box-shadow: inset 16px 16px 59px #10141d, inset -16px -16px 59px #141a25;
+}
+.dark-mode .company-site {
+  background-color: #303642 !important;
+  box-shadow: unset;
+  color: white;
+  transition: all ease-in-out 0.5s;
+}
+.dark-mode .footer-btn {
+  background-color: var(--light-dark);
+  transition: all ease-in-out 0.5s;
+}
+.dark-mode .search-container {
+  background-color: var(--light-dark);
+  transition: all ease-in-out 0.5s;
+}
+.dark-mode #search {
+  background-color: var(--light-dark);
+  transition: all ease-in-out 0.5s;
+}
