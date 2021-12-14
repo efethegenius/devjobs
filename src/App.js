@@ -11,17 +11,25 @@ function App() {
   const [toggleMode, setToggleMode] = useState(false);
   const [list, setList] = useState(false);
 
+  // storing the current mode in the local Storage
   const handleMode = () => {
     setToggleMode(!toggleMode);
+    document.body.classList.toggle("dark-mode");
+    document.body.classList.contains("dark-mode")
+      ? localStorage.setItem("darkMode", "enabled")
+      : localStorage.setItem("darkMode", "disabled");
   };
+
+  //getting the local stored mode
+  if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
 
   const handleList = () => {
     setList(!list);
   };
-
-  toggleMode
-    ? document.body.classList.add("dark-mode")
-    : document.body.classList.remove("dark-mode");
 
   return (
     <Router>

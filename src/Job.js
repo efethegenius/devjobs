@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { data } from "./data";
 import { GoToTop } from "./GoToTop";
 
@@ -35,7 +35,7 @@ export const Job = () => {
     setDescription(newData.description);
     setApply(newData.apply);
     setRole(newData.role);
-  });
+  }, [jobs, id]);
 
   let myRequirement;
   if (requirements.items) {

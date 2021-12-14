@@ -34,7 +34,6 @@ export const Jobs = ({ handleList, setList, list }) => {
     "All",
     ...new Set(filtered.map((allLocation) => allLocation.location)),
   ];
-  console.log(allLocations);
 
   const [newLocations, setNewLocations] = useState(allLocations);
 
